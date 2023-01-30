@@ -1,0 +1,13 @@
+
+<!-- <ul>
+    <li *ngFor="let item of resultados" >
+        {{ item.title }}
+    </li>
+</ul> -->
+
+<div *ngFor="let item of resultados"  class="card m-3 animate__animated fadeIn" style="width: auto;">
+    <div class="card-body">
+      <h5 class="card-title">{{ item.title }}</h5>
+      <img class="card-text" [src]="item.images.downsized_medium.url" alt="titulo gifs" />
+      </div>
+  </div>
